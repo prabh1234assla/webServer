@@ -1,2 +1,5 @@
-# webServer
-repository dedicated to webserver development using http module of nodeJs and module's study
+
+repo dedicated to **HTTP MODULE'S STUDY** of **NODEJS** 
+___
+- [x] *server.js* : main server file
+- [x] *dev dependency used* : nodemon for response **on change** in nodeJs files
