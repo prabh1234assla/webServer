@@ -1,3 +1,4 @@
+![web server pic](web_server.png)
 
 repo dedicated to **HTTP MODULE'S STUDY** of **NODEJS** 
 ___
