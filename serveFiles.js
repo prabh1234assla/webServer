@@ -1,7 +1,6 @@
 const http = require("http")
 const fs = require("fs")
-const path = require("path")
-const port = 3000
+const port = 8000
 
 const server = http.createServer((req, res)=>{
     console.log(`${req.method} request for ${req.url}`)
@@ -18,7 +17,7 @@ server.listen(port, (err)=>{
 })
 
 function serving(req, res){
-    // console.log("kjdkjdjdj")
+    console.log("kjdkjdjdj")
     if(req.url === "/index1"){
         fs.readFile('./public/index1.html', (err, data)=>{
             if(err){
@@ -49,7 +48,20 @@ function serving(req, res){
             }
             else
                 res.write(data)
-        res.end()
+        res.end("i am getting displayed too")
+        })
+    }
+    else if(req.url === "/index4"){
+        res.writeHead(200, {"Content-Type" : "text/json"})
+        fs.readFile('./public/index4.json', (err, data)=>{
+            if(err){
+                res.writeHead(404)
+                res.write("error: FILE_NOT_FOUND")
+            }
+            else
+                res.write(data)
+
+        res.end(JSON.stringify(data) + "i am also coming on the browser window")
         })
     }
     else{
