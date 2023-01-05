@@ -2,5 +2,6 @@
 
 repo dedicated to **HTTP MODULE'S STUDY** of **NODEJS** 
 ___
-- [x] *server.js* : main server file
-- [x] *dev dependency used* : nodemon for response **on change** in nodeJs files
+1. `listen` binds server to network address and its callback fn is fired the moment the server begins to bind to network
+2. 
+
