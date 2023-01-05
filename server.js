@@ -18,7 +18,7 @@ const server = http.createServer((req, res)=>{
 })
 
 server.listen(port, (err)=>{
-    if(err)
+    if(err !== null)
         console.error(err)
     else
         console.log(`server running successfully on port ${port}`)
